@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-app.use("/", productRouter);
+app.use("/api/products", productRouter);
 
 app.listen(5000, () => {
   connectDB();
